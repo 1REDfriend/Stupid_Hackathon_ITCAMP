@@ -4,32 +4,30 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 function App() {
-
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   const [check, setCheck] = useState(false);
   const countClick = () => {
-
-    const button = document.getElementById('btn');
-    button.classList.add('animate-wiggle');
+    const button = document.getElementById("btn");
+    button.classList.add("animate-wiggle");
     setTimeout(() => {
-      button.classList.remove('animate-wiggle');
+      button.classList.remove("animate-wiggle");
     }, 300);
 
-    setCount((count) => count + 1)
+    setCount((count) => count + 1);
     if (count == 19 && check == false) {
-      alert("อย่าโลภมากเว้ยยยย")
+      MySwal.fire({
+        title: <strong>อย่าโลภมากเว้ย !!!</strong>,
+        icon: "error",
+      });
       setCheck(true);
       console.log(check);
-    }
-    else if (count >= 20 && check == true) {
+    } else if (count >= 20 && check == true) {
       setCount(0);
-      setCheck(false)
+      setCheck(false);
       console.log(check);
     }
+  };
 
-  }
-
-  const rewards = ["รางวัลที่1", "3 ตัวหน้า", "3 ตัวท้าย", "2 ตัวหลัง"];
   const [dataTable, setDataTable] = useState([
     { id: 0, reward: "รางวัลที่ 1", lottery: "XXXX", price: 6000000 },
     { id: 1, reward: "3 ตัวหน้า", lottery: "XXX", price: 4000 },
@@ -85,8 +83,7 @@ function App() {
 
   return (
     <>
-
-      <h1 className="text-red-600">หวยจ้า</h1>
+      <h1 className="animation-bg-palette font-bold">หวยจ้า</h1>
       <div className="card">
         <div className="mb-4">
           <label
@@ -106,7 +103,13 @@ function App() {
         </div>
 
         <button onClick={handleClick}>OK</button>
-        <button id="btn" onClick={countClick} className=" ml-4 animate-wiggle inline-block align-middle">กดปุ่มเพื่อเสริมดวง: {count} EA</button>
+        <button
+          id="btn"
+          onClick={countClick}
+          className=" ml-4 animate-wiggle inline-block align-middle"
+        >
+          กดปุ่มเพื่อเสริมดวง: {count} EA
+        </button>
         {/* <h1 className="text-xl">{userLottery}</h1> */}
 
         {/* Table */}
