@@ -41,8 +41,8 @@
 <br>
     
 <div align="center" display="flex">
-  - <img src="https://media.tenor.com/_hgpTd9TVPAAAAAC/%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%AB%E0%B8%A7%E0%B8%A2-3%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%9A%E0%B8%99.gif">
-  - <img src="https://thumbs.gfycat.com/AbandonedLiquidChamois-size_restricted.gif">
+  - <img src="https://media.tenor.com/_hgpTd9TVPAAAAAC/%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%AB%E0%B8%A7%E0%B8%A2-3%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%9A%E0%B8%99.gif" height="250px">
+  - <img src="https://thumbs.gfycat.com/AbandonedLiquidChamois-size_restricted.gif" height="250px">
 </div>
 
 <br>
