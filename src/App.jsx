@@ -13,9 +13,6 @@ function App() {
   ]);
   const [num, setNum] = useState(null);
   const [userLottery, setUserLottery] = useState("");
-  const [newLottery, setNewLottery] = useState("");
-  const [randomNumber, setRandomNumber] = useState(null);
-
   const MySwal = withReactContent(Swal);
 
   const handleChange = (e) => {
@@ -35,27 +32,23 @@ function App() {
     }
     setNum(num);
 
-    // if (num == 3) {
-    //   const lastTwo = userLottery.slice(-2);
-    //   setNewLottery(lastTwo);
-    //   console.log(userLottery);
-    // }
-    // if (num == 2) {
-    //   const lastThree = userLottery.slice(-3);
-    //   setNewLottery(lastThree);
-    // }
-    // if (num == 1) {
-    //   const firstThree = userLottery.slice(0, 3);
-    //   setNewLottery(firstThree);
-    // }
-    // if (num == 0) {
-    //   setNewLottery(userLottery);
-    // }
-
+    let newLottery;
+  if (num === 3) {
+    const lastTwo = userLottery.slice(-2);
+    newLottery = lastTwo;
+  } else if (num === 2) {
+    const lastThree = userLottery.slice(-3);
+    newLottery = lastThree;
+  } else if (num === 1) {
+    const firstThree = userLottery.slice(0, 3);
+    newLottery = firstThree;
+  } else {
+    newLottery = userLottery;
+  }
     // Update DataTable
     setDataTable(
       dataTable.map((data) =>
-        data.id == num ? { ...data, lottery: userLottery } : { ...data }
+        data.id == num ? { ...data, lottery: newLottery } : { ...data }
       )
     );
 
