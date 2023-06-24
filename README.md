@@ -39,6 +39,12 @@
 <br>
 <h3 align="center" >ถ้าคุณอยากถูกหวยต้องมาที่เว็ปนี้</h3>
 <br>
+    
+<div align="center" display="flex">
+  - <img src="https://media.tenor.com/_hgpTd9TVPAAAAAC/%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%AB%E0%B8%A7%E0%B8%A2-3%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%9A%E0%B8%99.gif">
+  - <img src="https://thumbs.gfycat.com/AbandonedLiquidChamois-size_restricted.gif">
+</div>
+
 <br>
 
 <h1 align="center">Contact Team</h1>
@@ -46,7 +52,7 @@
 
 <p  align="center">
   <a href="https://github.com/Alikato-145">
-  <img src="https://img.shields.io/badge/manus-%230352fc.svg?&style=for-the-badge&logo=github&logoColor=white"  align="center">
+    <img src="https://img.shields.io/badge/manus-%230352fc.svg?&style=for-the-badge&logo=github&logoColor=white"  align="center">
 </a>
 
 <a href="https://github.com/ChaiyapatOam">
@@ -57,6 +63,21 @@
   <img src="https://img.shields.io/badge/ParamaWattanakrai-%230352fc.svg?&style=for-the-badge&logo=github&logoColor=white"  align="center">
 </a>
 
+<a href="https://github.com/1REDfriend">
+  <img src="https://img.shields.io/badge/|REDfriend-%230352fc.svg?&style=for-the-badge&logo=github&logoColor=white"  align="center">
+</a>
 </p>
+
+
+
+<div align="center">
+
+| <a href="http://github.com/Alikato-145"><img src="https://avatars.githubusercontent.com/u/127376376?v=4" width="100px;" alt="Alikato-145"/><br><sub><b>Manus</b></sub></a> | <a href="http://github.com/ChaiyapatOam"><img src="https://avatars.githubusercontent.com/u/83873103?v=4" width="100px;" alt="ChaiyapatOam"/><br><sub><b>ChaiyapatOam</b></sub></a> | <a href="http://github.com/ParamaWattanakrai"><img src="https://avatars.githubusercontent.com/u/121653239?v=4" width="100px;" alt="ParamaWattanakrai"/><br><sub><b>ParamaWat tanakrai</b></sub></a> | <a href="http://github.com/1REDfriend"><img src="https://avatars.githubusercontent.com/u/83909061?v=4" width="100px;" alt="1REDfriend"/><br><sub><b>Supakorn Pipithgul</b></sub></a> |
+| --- | --- | --- | --- |
+
+</div>
+
+
+
 
 
