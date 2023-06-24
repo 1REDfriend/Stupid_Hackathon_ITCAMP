@@ -4,12 +4,37 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 function App() {
+
+  const [count, setCount] = useState(0)
+  const [check, setCheck] = useState(false);
+  const countClick = () => {
+
+    const button = document.getElementById('btn');
+    button.classList.add('animate-wiggle');
+    setTimeout(() => {
+      button.classList.remove('animate-wiggle');
+    }, 300);
+
+    setCount((count) => count + 1)
+    if (count == 19 && check == false) {
+      alert("อย่าโลภมากเว้ยยยย")
+      setCheck(true);
+      console.log(check);
+    }
+    else if (count >= 20 && check == true) {
+      setCount(0);
+      setCheck(false)
+      console.log(check);
+    }
+
+  }
+
   const rewards = ["รางวัลที่1", "3 ตัวหน้า", "3 ตัวท้าย", "2 ตัวหลัง"];
   const [dataTable, setDataTable] = useState([
-    { id: 0, reward: "รางวัลที่ 1", lottery: "XXXX", price: 60000 },
-    { id: 1, reward: "3 ตัวหน้า", lottery: "XXX", price: 10000 },
-    { id: 2, reward: "3 ตัวท้าย", lottery: "XXX", price: 10000 },
-    { id: 3, reward: "2 ตัวหลัง", lottery: "XX", price: 10000 },
+    { id: 0, reward: "รางวัลที่ 1", lottery: "XXXX", price: 6000000 },
+    { id: 1, reward: "3 ตัวหน้า", lottery: "XXX", price: 4000 },
+    { id: 2, reward: "3 ตัวท้าย", lottery: "XXX", price: 4000 },
+    { id: 3, reward: "2 ตัวหลัง", lottery: "XX", price: 2000 },
   ]);
   const [num, setNum] = useState(null);
   const [userLottery, setUserLottery] = useState("");
@@ -33,18 +58,18 @@ function App() {
     setNum(num);
 
     let newLottery;
-  if (num === 3) {
-    const lastTwo = userLottery.slice(-2);
-    newLottery = lastTwo;
-  } else if (num === 2) {
-    const lastThree = userLottery.slice(-3);
-    newLottery = lastThree;
-  } else if (num === 1) {
-    const firstThree = userLottery.slice(0, 3);
-    newLottery = firstThree;
-  } else {
-    newLottery = userLottery;
-  }
+    if (num === 3) {
+      const lastTwo = userLottery.slice(-2);
+      newLottery = lastTwo;
+    } else if (num === 2) {
+      const lastThree = userLottery.slice(-3);
+      newLottery = lastThree;
+    } else if (num === 1) {
+      const firstThree = userLottery.slice(0, 3);
+      newLottery = firstThree;
+    } else {
+      newLottery = userLottery;
+    }
     // Update DataTable
     setDataTable(
       dataTable.map((data) =>
@@ -60,6 +85,7 @@ function App() {
 
   return (
     <>
+
       <h1 className="text-red-600">หวยจ้า</h1>
       <div className="card">
         <div className="mb-4">
@@ -80,7 +106,7 @@ function App() {
         </div>
 
         <button onClick={handleClick}>OK</button>
-
+        <button id="btn" onClick={countClick} className=" ml-4 animate-wiggle inline-block align-middle">กดปุ่มเพื่อเสริมดวง: {count} EA</button>
         {/* <h1 className="text-xl">{userLottery}</h1> */}
 
         {/* Table */}
