@@ -93,12 +93,13 @@ function App() {
             กรอกเลยจ้า
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:ring-1 focus:ring-[#646cff] leading-tight focus:outline-none focus:shadow-outline"
+            className=" duration-700 ease-in-out text-center shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:ring-1 focus:ring-[#646cff] leading-tight focus:outline-none focus:shadow-outline animation-bg-palette text-lg"
             id="lottery"
             type="tel"
             placeholder="กรอกเลยจ้า"
             maxLength="6"
             onChange={handleChange}
+            
           />
         </div>
 
