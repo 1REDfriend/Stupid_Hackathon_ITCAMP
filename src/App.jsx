@@ -83,7 +83,7 @@ function App() {
 
     MySwal.fire({
       title: <strong>ยินดีด้วย!</strong>,
-      html: <i>คุณถูกรางวัล</i>,
+      html: <i>คุณถูกรางวัล <b className=" duration-700 ease-in-out text-red-500 hover:text-orange-500">{dataTable[num].reward}</b></i>,
     });
   };
 
