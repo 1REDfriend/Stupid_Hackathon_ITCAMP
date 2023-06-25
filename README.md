@@ -39,10 +39,12 @@
 <br>
 <h3 align="center" >ถ้าคุณอยากถูกหวยต้องมาที่เว็ปนี้</h3>
 <br>
-    
+  - จากทารที่ทุคนชอบโดนหวยกินเราจึงสร้างเว็ปที่สามารถทำให้เราสามารถถูกหวยได้
+    <img src=""/>
+<br>
 <div align="center" display="flex">
-  - <img src="https://media.tenor.com/_hgpTd9TVPAAAAAC/%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%AB%E0%B8%A7%E0%B8%A2-3%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%9A%E0%B8%99.gif" height="250px">
-  - <img src="https://thumbs.gfycat.com/AbandonedLiquidChamois-size_restricted.gif" height="250px">
+  <img src="https://media.tenor.com/_hgpTd9TVPAAAAAC/%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%AB%E0%B8%A7%E0%B8%A2-3%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%9A%E0%B8%99.gif" height="250px">
+  <img src="https://thumbs.gfycat.com/AbandonedLiquidChamois-size_restricted.gif" height="250px">
 </div>
 
 <br>
