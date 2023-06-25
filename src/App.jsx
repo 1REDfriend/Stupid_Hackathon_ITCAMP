@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Swal from "sweetalert2";
+// import ParticleEffect from './ParticlesFX';
 import withReactContent from "sweetalert2-react-content";
 
 function App() {
@@ -11,8 +12,11 @@ function App() {
     button.classList.add("animate-wiggle");
     setTimeout(() => {
       button.classList.remove("animate-wiggle");
-      button.classList.remove("hidden");
+
     }, 300);
+    setTimeout(() => {
+      button.classList.remove("hidden");
+    }, 1000)
 
     setCount((count) => count + 1);
     if (count == 19 && check == false) {
@@ -101,7 +105,7 @@ function App() {
             placeholder="กรอกเลยจ้า"
             maxLength="6"
             onChange={handleChange}
-            
+
           />
         </div>
 
