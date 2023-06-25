@@ -11,6 +11,7 @@ function App() {
     button.classList.add("animate-wiggle");
     setTimeout(() => {
       button.classList.remove("animate-wiggle");
+      button.classList.remove("hidden");
     }, 300);
 
     setCount((count) => count + 1);
@@ -22,6 +23,7 @@ function App() {
       setCheck(true);
       console.log(check);
     } else if (count >= 20 && check == true) {
+      button.classList.add("hidden");
       setCount(0);
       setCheck(false);
       console.log(check);
@@ -107,7 +109,7 @@ function App() {
         <button
           id="btn"
           onClick={countClick}
-          className=" ml-4 animate-wiggle inline-block align-middle"
+          className=" duration-700 ease-in-out ml-4 animate-wiggle inline-block align-middle"
         >
           กดปุ่มเพื่อเสริมดวง: {count} EA
         </button>
